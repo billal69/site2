@@ -16,8 +16,8 @@
         </div>
         <ul class="menu">
             <li><a href="#">Acceuil</a></li>
-            <li><a href="#metier">Metier</a></li>
-            <li><a href="#a-propos">A propos</a></li>
+            <li><a href="#metier">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     
 
@@ -29,7 +29,7 @@
         <h4>DIGITAL CITIES</h4>
         <p>Votre partenaire BIM</p>
         
-        <a href="#contact" class="btn-reservation home-btn">Contact</a>
+    
   
     </section>
 
@@ -37,9 +37,6 @@
     <section id="a-propos" class="scroll">
         <h1 class="title">A propos</h1>
         <div class="img-desc">
-           <div class="left">
-                <img src="images/trois.jpg" alt="">
-           </div>
             <div class="right">
                 <p>DIGITAL CITIES est une société de services en ingénierie informatique spécialisée dans la modélisation des données du bâtiment (BIM) et les technologies associées</p>
                 <p>Notre entreprise est spécialisée dans le BIM et offre une gamme complète de services et de solutions logicielles pour aider ses clients à travailler plus efficacement et à réaliser des projets de construction de qualité supérieure. Nous sommes engagés dans la promotion du BIM en tant que norme de l'industrie et sommes fières de notre engagement envers la durabilité et l'efficacité énergétique dans la construction.</p>
@@ -50,7 +47,7 @@
 
     
     <section id="metier" class="scroll">
-        <h1 class="title">Metier</h1>
+        <h1 class="title">Services</h1>
         <div class="content">
          
         
@@ -60,9 +57,7 @@
                 <div class="content">
                     <div>
                         <h4>Ingénierie BIM</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
-                        <a href="#">Lire Plus</a>
+                        <a href="ingenieriebim.html"> Plus</a>
                     </div>
                 </div>
             </div>
@@ -73,9 +68,8 @@
                 <div class="content">
                     <div>
                         <h4>Numérisation</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
-                        <a href="#">Lire Plus</a>
+         
+                        <a href="numerisation.html">Plus</a>
                     </div>
                 </div>
             </div>
@@ -86,9 +80,8 @@
                 <div class="content">
                     <div>
                         <h4>Consulting</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
-                        <a href="#">Lire Plus</a>
+          
+                        <a href="consulting.html">Plus</a>
                     </div>
                 </div>
             </div>
@@ -97,28 +90,16 @@
     </section>
 
     <!--  contact section -->
-    <section id="contact" class="scroll">
-        <h1 class="title">Contact</h1>
-        <form action="">
-            <div class="left-right">
-                <div class="left">
-                    <label>Nom Complet</label>
-                    <input type="text">
-                    <label>Numéro</label>
-                    <input type="text">
-                    <label>Email</label>
-                    <input type="text">
-                    <label>Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="right">
-                    <label>Adresse de la sociéte</label>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647531560805!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <button>Envoyer</button>
+    <div class="container scroll" id="contact">
+        <form onsubmit="sendEmail();reset();return false">
+          <h2>Contact</h2>
+          <input type="text" id="name" placeholder="Votre nom complet" required>
+          <input type="email" id="email" placeholder="Votre mail" required>
+          <input type="text" id="phone" placeholder="Votre numero de telephone" required>
+          <textarea id="message"  rows="4" placeholder="La nature de votre demande"></textarea>
+          <button type="submit">Envoyer</button>
         </form>
-    </section>
+      </div>
     
 
   <div class="conteneur scroll">
@@ -156,7 +137,7 @@
             for (let i=0 ; i<reveals.length; i++){
                 let windowheight = window.innerHeight;
                 let revealtop = reveals[i].getBoundingClientRect().top;
-                let revealpoint = 150; 
+                let revealpoint = 120; 
                 if(revealtop<windowheight-revealpoint){
                     reveals[i].classList.add("onscroll");
                 }

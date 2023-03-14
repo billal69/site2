@@ -14,7 +14,7 @@ html {
     scroll-padding-top: 12px;
 }
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #ccc;
@@ -58,7 +58,7 @@ header  .logo  span {
 }
 .menu li a {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
@@ -75,13 +75,7 @@ header  .logo  span {
     flex-direction: column;
     position: relative;
 }
-#home h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-    -webkit-text-stroke: #fff 0.02px;
-    color: transparent;
-    text-transform: lowercase;
-}
+
 #home h4 {
     font-size: 50px;
     color: #fff;
@@ -93,30 +87,25 @@ header  .logo  span {
     margin-bottom: 10px;
     font-size: 12px;
 }
-.home-btn {
-    margin-bottom: 20px;
-}
+
 
 #home a{
     color: #ccc;
     font-size: 25px;
     text-decoration: underline;
 }
-#home a:active{
-    background: #ff0000;
-}
+
 /*A propos CSS*/
 #a-propos {
     margin-top: 100px;
-    margin-bottom: 50px;
     padding: 0 10%;
     width: 100%;
 }
 .title {
     text-transform: capitalize;
-    margin: 70px 0;
+    margin: 5px 0;
     font-weight: bold;
-    color: #29d9d5;
+    color: #ffffff;
     position: relative;
     margin-left:15px;
     font-size: 18px;
@@ -124,64 +113,40 @@ header  .logo  span {
 }
 .title::after {
     position: absolute;
-    left: -15px;
+    left: -7px;
     content: "";
     height: 100%;
-    background-color: #fff;
-    width: 5px;
+    background-color: #ffffff;
+    width: 2px;
 }
 .img-desc {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 100%;
 }
 
-.img-desc .left {
-    position: relative;
-    margin-left: 10px;
-    height: 250px;
-    width: 40%;
-}
+
 .img-desc .right {
-    width: 57%;
+    width: 90%;
+    height: 60%;
 }
 
-.img-desc .left img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    box-shadow: 0 0 10px #29d9d5;
-}
+
 .right p{
     color: white;
     font-size: 19px;
     padding-top: 15px;
 }
-.img-desc .right  {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 20px;
 
-}
-.img-desc .right p {
-    color: #999;
-    font: 14px;
-    margin-bottom: 36px;
-}
-.img-desc .right a {
-    border: 1px solid #29d9d5;
-    color: #29d9d5;
-    font-size: 14px;
-    padding: 8px 25px;
-    font-weight: bold;
-}
 
-/*Destination CSS*/
+
+
+
 #metier {
     padding: 0 10% ;
-    margin-bottom: 50px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 #metier .content {
     display: grid;
@@ -192,7 +157,7 @@ header  .logo  span {
     overflow: hidden;
     position: relative;
     height: 250px;
-    transition: 0.5s;
+    transition: 1s;
 }
 #metier .content .box img {
     height: 100%;
@@ -208,98 +173,87 @@ header  .logo  span {
     background-color: #fff;
     text-align: center;
     align-items: center;
-    transform: translateX(100%);
+    transform: translateY(100%);
     transition: 0.5s;
 }
 .box .content  h4 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .box .content p {
     padding: 2px;
     font-size: 12px;
+    color: black;
 }
-.box .content p:nth-child(3){
-    margin-bottom: 25px;
-}
+
 .box .content a {
     margin-top: 60px;
     padding: 10px 60px;
-    border: 2px solid #29d9d5;
-    color: #29d9d5;
+    background: #bb4757;
+    border-radius: 50px;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 12px;
+}
+.box .content a:hover{
+    background: brown;
 }
 .box:hover {
-    box-shadow: 0 0 10px #29d9d5;
+    box-shadow: 10px 7px 7px #001f61;
 }
 .box:hover .content {
     transform: translateX(0);
 }
 
 /* Contact CSS */
-#contact {
-    padding: 0 10%;
-    margin-bottom: 50px;
-    height: 90vh;
+
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    /* display: flex; */
+     align-items: center;
+    justify-content: center; 
     margin-top: 100px;
-}
-#contact form {
-    background-color: #fff;
-    margin:auto;
+  }
+  form{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-}
-.left-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.left-right .left , .left-right .right  {
-    display: flex;
-    flex-direction: column;
-    width: 49%;
-}
-#contact form label {
-    font-size: 14px;
-    padding: 10px 0;
-    font-weight: 600
-}
-#contact form input {
-    padding: 8px;
-    outline: 0;
-    border: 1px solid #999;
-}
-
-textarea {
-    height: 150px;
-    resize: none;
-    outline: 0;
-    width: 100%;
     padding: 10px;
-}
-#contact form input:focus , textarea:focus {
-    border: 1px solid #29d9d5;
-}
-iframe {
-    height: 150px;
-    width: 100%;
-}
-#contact button {
-    width: fit-content;
-    padding: 8px 40px;
-    background-color: #111;
-    border: 1px solid #111;
+  }
+  form h2{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+  }
+  
+  form input , form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+  
+  
+  }
+  
+  form button {
+    background: #ff5361;
+    padding: 15px;
     color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
     cursor: pointer;
-    transition: 0.5s;
-}
-#contact button:hover {
-    letter-spacing: 1px;
-}
-
-
+    width: 190px;
+    margin: 20px auto 0;
+    border-radius: 35px;
+  }
 
 
 .conteneur{
@@ -538,7 +492,7 @@ footer p span {
 
 .scroll{
     position: relative;
-    transform: translateY(70px);
+    transform: translateY(160px);
     opacity: 0;
     transition: all 2s ease;
 }
